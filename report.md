@@ -24,7 +24,7 @@ sigma = 0.1             # Ornstein-Uhlenbeck noise parameter std
 ```
 ## Architecture
 I have added batchnormalization to the original architecture from ddpg_pendulum.
-![Architecture](images/architecture.png "Architecture")
+![Architectures](images/architectures.png "Architectures")
 
 ## Result
 The results from running this implementation is seen in the figure below. The environment was solved in 
