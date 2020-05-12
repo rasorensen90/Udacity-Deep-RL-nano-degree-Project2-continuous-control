@@ -32,6 +32,7 @@ class Actor(nn.Module):
         
         # Batch Normalization layers
         self.bn1 = nn.BatchNorm1d(fc1_units)
+        self.bn2 = nn.BatchNorm1d(fc2_units)
         
         self.reset_parameters()
 
@@ -45,7 +46,7 @@ class Actor(nn.Module):
         if len(state.size()) == 1:
             state = torch.unsqueeze(state,0)
         x = F.relu(self.bn1(self.fc1(state)))
-        x = F.relu(self.fc2(x))
+        x = F.relu(self.bn2(self.fc2(x)))
         return torch.tanh(self.fc3(x))
 
 
@@ -72,6 +73,7 @@ class Critic(nn.Module):
         
         # Batch Normalization layers
         self.bn1 = nn.BatchNorm1d(fc1_units)
+        self.bn2 = nn.BatchNorm1d(fc2_units)
         
         self.reset_parameters()
 
@@ -86,5 +88,5 @@ class Critic(nn.Module):
             state = torch.unsqueeze(state,0)
         x = F.relu(self.bn1(self.fc1(state)))
         x = torch.cat((x, action), dim=1)
-        x = F.relu(self.fc2(x))
+        x = F.relu(self.bn2(self.fc2(x)))
         return self.fc3(x)
