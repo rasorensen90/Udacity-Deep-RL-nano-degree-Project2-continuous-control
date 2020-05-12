@@ -65,6 +65,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 ### Instructions
 
 Follow the instructions in `Continuous_Control.ipynb` to get started with training your own agent!  
+Or se the solution in `Continuous_Control_soultion.ipynb` to train with my setup.
 
 ### (Optional) Challenge: Crawler Environment
 
