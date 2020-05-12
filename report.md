@@ -24,11 +24,11 @@ sigma = 0.1             # Ornstein-Uhlenbeck noise parameter std
 ```
 ## Architecture
 I have added batchnormalization to the original architecture from ddpg_pendulum.
-![Architecture](images/architecture.PNG "Architecture")
+![Architecture](images/architecture.png "Architecture")
 
 ## Result
 The results from running this implementation is seen in the figure below. The environment was solved in 
-![Results](images/results.PNG "Results")
+![Results](images/results.png "Results")
 
 ## Possible future work
 * Hyperparameter optimization. Only a few runs have been made to find the used hyperparameters. A more thorough search might optimize the performance. 
