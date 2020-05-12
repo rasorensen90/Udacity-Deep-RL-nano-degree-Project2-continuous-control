@@ -18,6 +18,6 @@ TAU = 1e-3              # for soft update of target parameters
 LR_ACTOR = 1e-3         # learning rate of the actor 
 LR_CRITIC = 1e-4        # learning rate of the critic
 WEIGHT_DECAY = 0.0      # L2 weight decay
-theta=0.15              # Ornstein-Uhlenbeck noise parameter mean
-sigma=0.1               # Ornstein-Uhlenbeck noise parameter std
+theta = 0.15              # Ornstein-Uhlenbeck noise parameter mean
+sigma = 0.1               # Ornstein-Uhlenbeck noise parameter std
 ```
