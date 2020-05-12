@@ -8,6 +8,7 @@ The authors present the method as "a model-free, off-policy actor-critic algorit
 ![DDPG Algorithm](images/DDPG_algorithm.PNG "DDPG Algorithm")
 
 The implementation of DDPG was initialized from the DDPG implementaiton in [Udacity Deep RL Github](https://github.com/udacity/deep-reinforcement-learning) **ddpg_pendulum**.
+Small changes have been made to allow for multiple agents, such as expanding the replay buffer and looping over agents.
 
 ## Hyper parameters
 ```python
@@ -21,3 +22,14 @@ WEIGHT_DECAY = 0.0      # L2 weight decay
 theta = 0.15            # Ornstein-Uhlenbeck noise parameter mean
 sigma = 0.1             # Ornstein-Uhlenbeck noise parameter std
 ```
+## Architecture
+I have added batchnormalization to the original architecture from ddpg_pendulum.
+![Architecture](images/architecture.PNG "Architecture")
+
+## Result
+The results from running this implementation is seen in the figure below. The environment was solved in 
+![Results](images/results.PNG "Results")
+
+## Possible future work
+* Hyperparameter optimization. Only a few runs have been made to find the used hyperparameters. A more thorough search might optimize the performance. 
+* Try the more reasent version of DDPG, namely the [D4PG](https://arxiv.org/pdf/1804.08617.pdf) algorithm. 
