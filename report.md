@@ -29,6 +29,7 @@ The network is kept the same as the original architecture from ddpg_pendulum, ex
 ## Result
 The results from running this implementation is seen in the figure below. The environment was solved in 105 episodes.
 ![Results](images/results.png "Results")
+The blue line shows the average score of the episode for all agents, while the orange line shows the average score for all agents over the last 100 episodes. The environment is considered solved when the average over the last 100 episodes is above 30, averaged over all agents.
 
 ## Possible future work
 * Hyperparameter optimization. Only a few runs have been made to find the used hyperparameters. A more thorough search might optimize the performance. 
