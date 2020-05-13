@@ -23,7 +23,7 @@ theta = 0.15            # Ornstein-Uhlenbeck noise parameter mean
 sigma = 0.1             # Ornstein-Uhlenbeck noise parameter std
 ```
 ## Architecture
-I have added batchnormalization to the original architecture from ddpg_pendulum.
+The network is kept the same as the original architecture from ddpg_pendulum, except I have added batchnormalization to the first layer, as well as changed the number of neurons to 256 and 512 for the first two layers in both the actor and the critic architecture. 
 ![Architectures](images/architectures.png "Architectures")
 
 ## Result
