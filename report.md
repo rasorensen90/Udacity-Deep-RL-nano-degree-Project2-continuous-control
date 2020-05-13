@@ -27,7 +27,7 @@ The network is kept the same as the original architecture from ddpg_pendulum, ex
 ![Architectures](images/architectures.png "Architectures")
 
 ## Result
-The results from running this implementation is seen in the figure below. The environment was solved in 
+The results from running this implementation is seen in the figure below. The environment was solved in 105 episodes.
 ![Results](images/results.png "Results")
 
 ## Possible future work
